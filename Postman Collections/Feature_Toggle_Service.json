@@ -1,0 +1,277 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Feature Toggle Service",
+    "_postman_id": "3eb37467-55d4-9e72-3df2-5e1531ebac93",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "08768228-9453-76ec-15d0-773335315e81",
+      "name": "Get Requests",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "b459f9d5-e4b9-b334-b9f1-6343c82e9a1e",
+          "name": "Get Feature Toggles",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/toggles",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "8fff0abd-825c-1f7c-e8ec-49ec222c2e6a",
+          "name": "Get Features",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2ac85210-59bb-1a82-fb90-dc02430f6010",
+          "name": "Get Feature By ID",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/482da328-c57c-54f6-e054-0000779f68ec",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "e4b8b0de-4f18-b693-257b-3aaa8651b4e2",
+          "name": "Get Feature Group By ID",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/feature-groups/00000000-0000-0000-0000-000000000000",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "6f9f389e-35dd-88f9-a522-81056a46cb90",
+          "name": "Get Feature Groups",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/feature-groups",
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "7e78254b-ad08-fe5f-0d35-53c801c4820a",
+      "name": "Feature Commands",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "ae756931-7d0c-90a7-3976-5ce76c7ea734",
+          "name": "Enable Feature",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/enable",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "55c7d23b-e4e4-fc92-d17a-836c930173bb",
+          "name": "Disable Feature",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/disable",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "187e54b9-051f-1e7f-bd19-965ab757a87f",
+          "name": "Create Rule",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/create-rule",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "a2f31977-985d-ac84-310e-3fe5edbf3c79",
+          "name": "Rule Toggle Status ON",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/rules/063d4e90-604a-46f2-b7cd-4f38c1710c80/toggle-status/ON",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "f2e37678-27d1-4836-680f-5d4d601ad9e3",
+          "name": "Add User ID Condition",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/rules/063d4e90-604a-46f2-b7cd-4f38c1710c80/create-userid-condition",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t\"0D276489-72A8-4360-96F6-C21C24C7D6A5\",\n\t\"84FFA93B-61F9-4597-A732-B1104CCA1E56\"\n]"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "1c41dd07-4ef6-520c-0eed-17b6622d8d4b",
+          "name": "Add Users to existing User ID Condition",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/rules/063d4e90-604a-46f2-b7cd-4f38c1710c80/conditions/230d41cb-f32e-4aad-aabe-3e475b277608/add-users",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t\"97DFAA88-DE8C-4B10-A5DA-8508BE888C5D\",\n\t\"B8C8917B-8C0F-4296-8F96-BC42A30CE5DE\"\n]"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "63ac03e9-292b-f169-8932-6a4cee67a33f",
+          "name": "Remove Users to existing User ID Condition",
+          "request": {
+            "url": "https://xffd1425vuk.dev.eur.wm.ubs.net:8443/feature-toggle/v1/admin/features/486e042f-8536-115c-e054-0000779f68ec/rules/063d4e90-604a-46f2-b7cd-4f38c1710c80/conditions/230d41cb-f32e-4aad-aabe-3e475b277608/remove-users",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t\"B8C8917B-8C0F-4296-8F96-BC42A30CE5DE\"\n]"
+            },
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
