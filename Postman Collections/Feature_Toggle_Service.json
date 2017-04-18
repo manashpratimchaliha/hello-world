@@ -50,7 +50,7 @@
               "mode": "raw",
               "raw": "{\n\t\"assetAmount\" : 100,\n\t\"expectationType\" : 1\n}"
             },
-            "description": ""
+            "description": "Testing"
           },
           "response": []
         },
